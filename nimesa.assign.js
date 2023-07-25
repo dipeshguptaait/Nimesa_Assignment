@@ -5,7 +5,7 @@ const readline = require('readline').createInterface({
 
 const fetch = require('node-fetch'); // Import the 'node-fetch' module to make API requests
 
-const API_URL = "https://api.openweathermap.org/data/2.5/forecast/hourly?q=London,gb&appid=YOUR_API_KEY"; // Replace YOUR_API_KEY with your actual OpenWeatherMap API key
+const API_URL = "https://samples.openweathermap.org/data/2.5/forecast/hourly?q=London,us&appid=b6907d289e10d714a6e88b30761fae22"; // Replace YOUR_API_KEY with your actual OpenWeatherMap API key
 
 async function getWeatherData(date) {
   const res = await fetch(`${API_URL}&dt=${date}`);
